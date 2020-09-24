@@ -1,0 +1,85 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75em;
+  padding: .25em;
+
+}
+
+.input{justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 360px;
+  margin: 15px;
+  margin-right: 45px;
+  color: white;
+background:rgba(200, 170, 207, 0.76);}
+
+.sub{  height: 30px;
+  box-shadow: 0 0 10px rgba(74, 15, 88, 0.76),0 0 40px rgba(150, 6, 185, 0.76),0 0 80px rgba(116, 25, 139, 0.76);
+  border-radius:50%;
+background: rgba(158, 70, 180, 0.76);
+color: white;
+border:none;
+transition:0.8s;
+}
+
+.sub:hover{  height: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.76),0 0 40px rgba(3, 2, 3, 0.76),0 0 80px rgba(3, 2, 3, 0.76);
+  border-radius:50%;
+background: linear-gradient(rgba(124, 24, 206, 0.8),rgba(189, 54, 137, 0.4));
+
+color: rgba(0, 0, 0, 0.76);
+
+border:none;
+}
+
+
+h1 {  justify-content: center;
+  align-items: center;
+
+    font-size: 90px;
+    letter-spacing: 1px;
+    color: blueviolet;
+}
+
+.todo{display: flex;}
+.cb-label{margin-left:10px;
+}
+.deleteBtn{margin-left:10px;
+}
+
+.App .todoList .s{display:flex;
+  flex-direction: column;
+
+  font-size: 15px;
+font-style: oblique;
+color: black;}
+
+h2 {
+  font-size: 90px;
+  letter-spacing: 1px;
+  color: blueviolet;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList {position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-left: 7px;
+  border-left:1.5px solid black;
+  border-right:1.5px solid black;
+  border-top:1.5px solid black;
+  display: grid;
+  flex-direction: column;
+  border-radius: 28px 28px 9px 9px;
+  width: 40%;
+  width: 40%;
+  height: 300px;
+  background-color: rgba(201, 128, 219, 0.76);
+}

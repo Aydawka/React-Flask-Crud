@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+<b><nav class="nav">
+  <a class="nav-link active text-dark" href="/" >Home</a>
+  <a class="nav-link active text-dark" href="/login">Login</a>
+  <a class="nav-link active text-dark" href="/login">Contact</a>
+
+</nav></b>
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-secondary" role="alert">
+{{message}}
+</div>
+{% if message %}
+
+  <a class="nav-link active text-dark justify-content-center" href="/logout">Contact</a>
+
+{% endif %}{% endfor %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Think Creative</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quibusdam in ratione. Impedit sit expedita tenetur provident libero ratione rerum autem architecto fugit, corrupti explicabo omnis? Eaque commodi illum suscipit!</p>
+
+{% endblock %}
+
+<!-- As a link -->
+
+

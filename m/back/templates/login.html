@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Think Creative</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+<p class="justify-content-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quibusdam in ratione. Impedit sit expedita tenetur provident libero ratione rerum autem architecto fugit, corrupti explicabo omnis? Eaque commodi illum suscipit!</p>
+{% for message in get_flashed_messages() %}
+
+<div class="jumbotron">{{message}}</div>
+{% endfor %}
+<div class=" container justify-content-center">
+<form action="" method="post">
+	<input type="text"  placeholder="username " name="username" value="{{request.form.username}}">
+	<input type="password"  placeholder="password" name="password" value="{{request.form.password}}">
+
+<button type="submit" class="btn btn-dark" value="login" name=submit>submit</button>
+</form></div>
+{% if error %}<p class="error">error {{error}}</p>{% endif %}
+<button class="btn btn-primary"><a href="/logout"></a>logout</button>
+
+{% endblock %}
+
